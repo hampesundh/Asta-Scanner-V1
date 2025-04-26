@@ -1,80 +1,93 @@
-# AstaScannerV1 🚀
+# Asta-Scanner V1 🚀
+
+![Asta-Scanner](https://img.shields.io/badge/Asta--Scanner-V1-blue?style=flat&logo=python)
+
+Welcome to the Asta-Scanner V1 repository! This is a Python-based web scanning tool designed to help you gather information and automate exploits on websites. Whether you're a seasoned bug bounty hunter or just starting in penetration testing, Asta-Scanner V1 offers you the tools you need to succeed.
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
+
+## Features 🌟
+
+- **Information Gathering**: Quickly collect data about websites, including DNS records, server details, and more.
+- **Automated Exploits**: Run predefined exploits to test for vulnerabilities without manual intervention.
+- **User-Friendly Interface**: Easy-to-navigate interface that helps you get started without a steep learning curve.
+- **Extensible Framework**: Add your own plugins and scripts to enhance functionality.
+- **Multi-Platform Support**: Works on Windows, macOS, and Linux.
 
 ## Installation ⚙️
 
-1. **Clone or download the project**:
+To get started with Asta-Scanner V1, you need to clone the repository and install the required dependencies. Follow these steps:
 
-    ```bash
-    git clone https://github.com/username/asta-scanner.git
-    cd asta-scanner
-    ```
+1. Clone the repository:
 
-2. **(Optional) Create and activate a virtual environment**:
+   ```bash
+   git clone https://github.com/hampesundh/Asta-Scanner-V1.git
+   cd Asta-Scanner-V1
+   ```
 
-    - **Linux/macOS**:
+2. Install the required Python packages:
 
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-    - **Windows**:
+3. Make sure you have Python 3.6 or higher installed on your machine.
 
-    ```bash
-    python -m venv venv
-    venv\Scripts\activate
-    ```
+## Usage 🖥️
 
-3. **Install the required dependencies**:
+To run Asta-Scanner V1, use the following command:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+python main.py
+```
 
-## Usage 💻
+You will see a user-friendly interface where you can select the type of scan you want to perform. 
 
-1. Run the `asta.py` script:
+### Example Scans
 
-    ```bash
-    python asta.py
-    ```
+- **Basic Scan**: Use this to gather general information about a target website.
+- **Vulnerability Scan**: Run this to check for common vulnerabilities like SQL injection or XSS.
+- **Custom Scan**: Create your own scan by selecting specific parameters.
 
-2. Enter the **domain** or **IP** of the target you want to scan and select the appropriate protocol (`http` or `https`).
-
-## Features 🎯
-
-### 1. WHOIS Information
-
-Collects information about the ownership of the domain and other related data, such as email addresses or administrative contacts.
-
-### 2. DNS Lookup
-
-Allows you to check the IP addresses associated with the target domain. This is important for network mapping or further analysis of server configuration.
-
-### 3. CMS/Framework Detection
-
-AstaScannerV1 can detect if the website is using a specific CMS or framework (such as WordPress, Joomla, or Drupal). This helps identify the technology used and potential vulnerabilities.
-
-### 4. Admin Panel Finder
-
-This feature searches for commonly used admin panel URLs, such as `/admin` or `/wp-admin`, to expose potential entry points to the system.
-
-### 5. Nmap Scan
-
-Performs port scanning to find open ports, such as those for SSH, HTTP, HTTPS, and FTP. This can help identify services running on the target server.
-
-### 6. Nuclei Scan
-
-Vulnerability scanning using **Nuclei** to detect potential vulnerabilities based on available exploit templates.
-
-### 7. Auto Exploit
-
-When a CMS is detected, AstaScannerV1 can attempt to automatically execute exploits against the CMS, if exploit scripts are available within the tool.
+For detailed usage instructions, check the documentation included in the `docs` folder.
 
 ## Contributing 🤝
 
-If you're interested in contributing to the development of **AstaScannerV1**, you can submit **pull requests** or report bugs by opening **issues**.
+We welcome contributions to Asta-Scanner V1! If you want to help improve the tool, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch to your forked repository.
+5. Create a pull request.
+
+Your contributions help make Asta-Scanner V1 better for everyone.
 
 ## License 📄
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
+Asta-Scanner V1 is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Contact 📬
+
+For questions, suggestions, or feedback, feel free to reach out:
+
+- **Email**: your.email@example.com
+- **Twitter**: [@your_twitter_handle](https://twitter.com/your_twitter_handle)
+
+## Releases 📦
+
+To download the latest version of Asta-Scanner V1, visit our [Releases](https://github.com/hampesundh/Asta-Scanner-V1/releases) section. Download the appropriate file and execute it to get started with the latest features and fixes.
+
+If you encounter any issues, please check the [Releases](https://github.com/hampesundh/Asta-Scanner-V1/releases) section for updates or patches.
+
+---
+
+Thank you for your interest in Asta-Scanner V1! We hope you find it useful in your web scanning and penetration testing efforts. Happy scanning!
